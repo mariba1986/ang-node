@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead class="thead-dark mt-5">
+        <tr>
+            <th scope="col">Toote ID</th>
+            <th scope="col">Tootekood</th>
+            <th scope="col">Kirjeldus</th>
+            <th scope="col">Kategooria</th>
+            <th scope="col">Ladu</th>
+            <th scope="col">Kogus</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of stock.stock">
+            <td>{{item.partID}}</td>
+            <td>{{item.partNum}}</td>
+            <td>{{item.partDescription}}</td>
+            <td>{{item.partClass}}</td>
+            <td>{{item.WareHouseCode}}</td>
+            <td>{{item.qty}}</td>
+        </tr>
+    </tbody>
+</table>
